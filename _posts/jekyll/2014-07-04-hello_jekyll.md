@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello jekyll
-categories: jekyll
+category: jekyll
 ---
 
 Jekyll is awesome.
