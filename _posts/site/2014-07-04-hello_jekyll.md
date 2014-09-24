@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello jekyll and GitHub!
-category: site
+categories: site
 ---
 
 Hello, Jekyll.
