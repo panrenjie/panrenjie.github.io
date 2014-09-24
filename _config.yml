@@ -7,7 +7,7 @@ url: 				http://shinyzhu.com
 permalink: 			/:category/:year/:month/:day/:title
 paginate: 			10
 paginate_path: 		/page/:num
-excerpt_separator: 	'<!-- xxxholic -->'
+excerpt_separator: 	''
 
 # Jekyll configurations
 
