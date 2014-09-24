@@ -1,0 +1,20 @@
+# basic info
+
+author: 			shiny
+email:				shiny@shinyzhu.com
+name: 				Shiny Zhu
+url: 				http://shinyzhu.com
+permalink: 			/:category/:year/:month/:day/:title
+paginate: 			10
+paginate_path: 		/page/:num
+excerpt_separator: 	'<!-- xxxholic -->'
+
+# Jekyll configurations
+
+safe: 		true
+markdown: 	rdiscount
+pygments: 	true
+timezone: 	Asia/Shanghai
+
+# social info
+github: shinyzhu
