@@ -1,13 +1,8 @@
 ---
 layout: post
 title: Hello jekyll and GitHub!
-author: shiny
-categories: site
-tags: site
+category: site
 ---
-
-{{ page.title }}
-================
 
 Hello, Jekyll.
 
