@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Welcome
+title: Hello jekyll and GitHub!
 author: shiny
-category: others
-tags: others
+categories: site
+tags: site
 ---
 
 {{ page.title }}

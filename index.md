@@ -1,19 +1,13 @@
 ---
 layout: post
-title: Welcome
-author: shiny
-category: site
-tags: site
+title: Home
 ---
 
-{{ page.title }}
-================
-
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      {{ post.excerpt }}
-    </li>
-  {% endfor %}
-</ul>
+{% for post in site.posts %}
+  <div class='post'>
+    <span class='date'>{{post.date | date_to_string}}</span>
+    <h1><a href='{{post.url}}'>{{post.title}}</a></h1>
+    <div class='body'>{{post.content}}</div>
+    <a href='{{post.url}}#disqus_thread'>View Comments</a>
+  </div>
+<% endfor %}
