@@ -1,17 +1,17 @@
 # basic info
 
-email:shiny@shinyzhu.com
-permalink:/:year/:month/:day/:title
-paginate:10
-paginate_path:/page/:num
-excerpt_separator:''
+email: shiny@shinyzhu.com
+permalink: /:year/:month/:day/:title
+paginate: 10
+paginate_path: /page/:num
+excerpt_separator: ''
 
 # Jekyll configurations
 
-safe:true
-markdown:rdiscount
-pygments:true
-timezone:Asia/Shanghai
+safe: true
+markdown: rdiscount
+pygments: true
+timezone: Asia/Shanghai
 
 # social info
-github:shinyzhu
+github: shinyzhu
