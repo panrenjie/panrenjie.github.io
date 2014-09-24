@@ -9,6 +9,10 @@ tags: site
 {{ page.title }}
 ================
 
-Hello, welcome to IT's Shiny.
-
-This is the first post!
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
