@@ -1,7 +1,7 @@
 # basic info
 
 email: shiny@shinyzhu.com
-permalink: /:categories/:year/:month/:day/:title
+permalink: /:categories/:title
 paginate: 10
 paginate_path: /page/:num
 excerpt_separator: ''
