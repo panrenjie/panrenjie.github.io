@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>{{ site.name }}</title>
- <link href="{{ site.atom-baseurl }}/atom.xml" rel="self"/>
+ <link href="{{ site.atom-baseurl }}/feed.xml" rel="self"/>
  <link href="{{ site.atom-baseurl }}"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>{{ site.atom-baseurl }}/</id>
