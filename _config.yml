@@ -3,10 +3,11 @@
 name: "IT's Shiny"
 description: "IT's Shiny"
 #blog logo
-logo: "/assets/images/df_logo.jpg"
+logo: "/assets/images/logo.jpg"
 # blog cover
 cover: "http://s.cn.bing.net/az/hprichbg/rb/TulfesTyrol_ZH-CN11110819205_1920x1080.jpg"
 author: "shinyzhu"
+author_image: "/assets/images/author.jpg"
 email: shiny@shinyzhu.com
 permalink: /:categories/:title
 paginate: 5
