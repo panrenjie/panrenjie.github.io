@@ -2,8 +2,11 @@
 layout: post
 title: Enumerations in Swift
 guid: urn:uuid:229D9D6C-E2F7-40E8-AABE-F37CEC852816
-category: swift
-tags: swift
+category: programming
+tags: 
+  - ios
+  - swift
+  - programming
 image: http://s.cn.bing.net/az/hprichbg/rb/PearLake_ZH-CN8058573080_1920x1080.jpg
 ---
 
