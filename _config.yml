@@ -6,7 +6,7 @@ description: "IT's Shiny - programming and reading"
 logo: "/assets/images/logo.jpg"
 # blog cover
 cover: "http://s.cn.bing.net/az/hprichbg/rb/TulfesTyrol_ZH-CN11110819205_1920x1080.jpg"
-author: "shinyzhu"
+author: "Shiny"
 author_image: "/assets/images/author.jpg"
 email: shiny@shinyzhu.com
 permalink: /:year/:month/:day/:title
@@ -48,13 +48,13 @@ social:
     desc: Subscribe to my feed
 
 menu:
-  - title:  主页
+  - title:  Home
     url:  /
 
-  - title: 文章存档
+  - title: Archive
     url: /blog
 
-  - title:  关于作者
+  - title:  About
     url:  /about
 
 
