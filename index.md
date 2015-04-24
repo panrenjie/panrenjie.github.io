@@ -11,10 +11,10 @@ layout: default
 <header class="blog-header">
     <div id="RSSview" style='display:none;'></div>
     {% if site.logo %}
-      <a class="blog-logo" href="{{site.url}}" style="background-image: url('{{ site.logo }}')"></a>
+      <a class="blog-logo" href="{{site.baseurl}}" style="background-image: url('{{ site.logo }}')"></a>
     {% endif %}
     <h1 class="blog-title"></h1>
-    <h2 class="blog-description cjsyingbixingshu" style="color: #000">{{ site.description }}</h2>
+    <h2 class="blog-description" style="color: #000">{{ site.description }}</h2>
     <div class="custom-links">
       {% for social in site.social %}
         {% if social.url %}
