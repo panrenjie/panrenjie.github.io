@@ -17,7 +17,6 @@
               <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ site.author }}</h4>
               on
               <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time>
-               , tagged on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}
             </div>
             <div style="text-align:center">
               <a href="#topofpage" class="topofpage"><i class="fa fa-angle-down"></i></a>
@@ -33,7 +32,6 @@
               <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ page.author }}</h4>
               on
               <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time>
-              , tagged on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}
             </div>
           </div>
         </div>
@@ -43,11 +41,11 @@
         {% endif %}
         <section class="post-content">
           <div class="post-reading">
-            阅读本文可能会占用您<span class="post-reading-time"></span>
+            <span class="post-reading-time"></span> read.
           </div>
           <a name="topofpage"></a>
           {{content}}
-          
+
           <hr />
         </section>
         <footer class="post-footer">
@@ -75,8 +73,8 @@
       </div>
       <div class="inner">
         <h1 class="blog-title ruibo">{{ site.title }}</h1>
-        <h2 class="blog-description  cjsyingbixingshu">{{ site.description }}</h2>
-        <a href="/" class="btn">回到首页</a>
+        <h2 class="blog-description">{{ site.description }}</h2>
+        <a href="/" class="btn">Home</a>
       </div>
     </div>
     {% include javascripts.html %}
