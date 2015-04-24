@@ -1,11 +1,12 @@
 # basic info
 
+name: "IT's Shiny"
+author: "shinyzhu"
 email: shiny@shinyzhu.com
 permalink: /:categories/:title
-paginate: 10
+paginate: 5
 paginate_path: /page/:num
 excerpt_separator: ''
-name: "IT's Shiny"
 
 # Jekyll configurations
 
@@ -15,23 +16,44 @@ pygments: true
 timezone: Asia/Shanghai
 highlighter: pygments
 
-# social info
-github: shinyzhu
-
-author: "shinyzhu"
 atom-baseurl: "http://shinyzhu.com"
+
+commentsystem: disqus
 disqus: "shinyzhu"
 
-navigations:
-  - title: Archive
-    class: fa fa-list-ul
-    href: /archive.html
-  - title: Tags
-    class: fa fa-tags
-    href: /tags.html
-  - title: About
-    class: fa fa-user
-    href: /about.html
-  - title: Subscribe
-    class: fa fa-rss
-    href: /atom.xml
+# social icons and sharing options
+social:
+  - icon:	twitter
+    url:	https://twitter.com/shinyzhu
+    desc: Follow me on twitter
+    share_url: http://twitter.com/share
+    share_title: ?text=
+    share_link: "&amp;url="
+
+  - icon:	github
+    url:	https://github.com/shinyzhu
+    desc:	Fork me on github
+    share_url:
+    share_title:
+    share_link:
+
+  - icon: feed
+    url:  /feed.xml
+    desc: Subscribe to my feed
+
+menu:
+  - title:  Home [主页]
+    url:  /
+
+  - title: Blog [博客]
+    url: /blog
+
+  - title: Work [作品]
+    url: /work
+
+  - title:  Me [我]
+    url:  /about
+
+
+# Google Analytics (add the UA Code, e.g.: UA-xxxxxxxx-1)
+google_analytics: UA-1645044-4

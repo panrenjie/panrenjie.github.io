@@ -1,0 +1,85 @@
+<script type="text/javascript" src="http://www.youziku.com/UserDownFile/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.youziku.com/UserDownFile/jquery.md5.js"></script>
+<script type="text/javascript" src="{{ "/assets/js/min/jquery.fitvids-ck.js" | prepend: site.baseurl  }}"></script>
+<script type="text/javascript" src="{{ "/assets/js/min/jquery.lazyload.min.js" | prepend: site.baseurl  }}"></script>
+<script type="text/javascript" src="{{ "/assets/js/index.js" | prepend: site.baseurl  }}"></script>
+<script type="text/javascript" src="{{ "/assets/js/readingTime.min.js" | prepend: site.baseurl  }}"></script>
+<script type="text/javascript" src="http://wsandbox.sinaapp.com/bingbg.js"></script>
+<script type="text/javascript" src="http://cdn.bootcss.com/mathjax/2.4.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+    });
+
+    (function ($) {
+      "use strict";
+      $(document).ready(function(){
+
+          var bingBgURL = bingBgJSON.images[0].url;
+          $('#bingBG').css('background-image', 'url(' + bingBgURL + ')');
+
+          $('div.teaserimage-image').lazyload({
+              effect : "fadeIn"
+          });
+
+        var $window = $(window),
+        $image = $('.post-image-image, .teaserimage-image');
+        $window.on('scroll', function() {
+          var top = $window.scrollTop();
+
+          if (top < 0 || top > 1500) { return; }
+          $image
+            .css('transform', 'translate3d(0px, '+top/3+'px, 0px)')
+            .css('opacity', 1-Math.max(top/700, 0));
+        });
+        $window.trigger('scroll');
+
+        var height = $('.article-image').height();
+        $('.post-content').css('padding-top', height + 'px');
+
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+           && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({ scrollTop: target.offset().top }, 500);
+              return false;
+            }
+          }
+        });
+      });
+    }(jQuery));
+
+    function youziku19370() {
+        var resultStr = $(".cjsyingbixingshu").text();
+        var md5 = "";
+        resultStr = Trim(resultStr);
+        resultStr = SelectWord(resultStr);
+        md5 = $.md5("1161ae0398654f06bfa22b033dfcf58c"+"cjsyingbixingshu" + resultStr);
+        $.getJSON("http://www.youziku.com/webfont/CSSPOST?jsoncallback=?", { "id": md5, "guid": "1161ae0398654f06bfa22b033dfcf58c", "type": "5" }, function (json) {
+            if (json.result == 0) {/*alert("需要生成");*/
+                $.post("http://www.youziku.com/webfont/PostCorsCreateFont", { "name": "cjsyingbixingshu", "gid": "1161ae0398654f06bfa22b033dfcf58c", "type": "5", "text": resultStr }, function (json) {
+                    if (json == "0") { /*alert("参数不对");*/
+                    } else if (json == "2") {/*alert("超过每日生成字体数的上限");*/
+                    } else if (json == "3") { /*alert("当前正在生成请稍后");*/
+                    } else {/*alert("正在生成");*/
+                    }
+                });
+            }
+            else {/*alert("下载css文件");*/
+                loadExtentFile("http://www.youziku.com/webfont/css?id=" + md5 + "&guid=" + "1161ae0398654f06bfa22b033dfcf58c" + "&type=5");
+            }
+        });
+    }
+
+    (function youziku() {
+        if (window.location.href.toString().substring(0, 7) == "file://") {
+            alert("你当前是通过双击打开html文件，进行本地测试的，这样看不到字体效果，一定要通过本地建立的虚拟网站或发布到外网进行测试。详见有字库的使用说明。");
+        }else{
+            youziku19370();
+        }
+    })();
+
+</script>
+
