@@ -189,7 +189,7 @@ body { font-family: Microsoft YaHei; margin: 0; padding: 0; text-rendering: opti
 
 .post-tag-articleimage { display: none; }
 
-pre, code { font-size: 14px; border-left: 6px solid #558abb; }
+pre, code { font-size: 14px; border: 1px solid #e8e8e8; border-radius: 3px; background-color: #eef; }
 
 code { padding: 1px 5px; }
 

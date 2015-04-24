@@ -3,9 +3,7 @@ layout: default
 ---
 
 <div class="teaserimage">
-    <div class="teaserimage-image" data-original={% if site.cover %}{{ site.cover }}{% endif %} >
-        Teaser Image
-    </div>
+    <div class="teaserimage-image" data-original={% if site.cover %}{{ site.cover }}{% endif %} ></div>
 </div>
 
 <header class="blog-header">
@@ -27,7 +25,6 @@ layout: default
             {% endif %}
         {% endif %}
       {% endfor %}
-      <!--<a href="/about/">About</a>-->
     </div>
 </header>
 
@@ -48,7 +45,7 @@ layout: default
             </section>
             <div class="post-meta">
               <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-  <!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
+              <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>
             </div>
           </div>
         </article>
@@ -70,7 +67,7 @@ layout: default
             </section>
             <div class="post-meta">
               <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-<!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
+              <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>
             </div>
           </div>
         </article>
