@@ -16,7 +16,7 @@ pygments: true
 timezone: Asia/Shanghai
 highlighter: pygments
 
-atom-baseurl: "http://shinyzhu.com"
+baseurl: "http://shinyzhu.com"
 
 commentsystem: disqus
 disqus: "shinyzhu"
