@@ -1,6 +1,7 @@
 # basic info
 
 name: "IT's Shiny"
+description: "about shiny"
 author: "shinyzhu"
 email: shiny@shinyzhu.com
 permalink: /:categories/:title
