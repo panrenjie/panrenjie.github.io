@@ -4,13 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- (1) force latest IE rendering engine: bit.ly/1c8EiC9 -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  {% if page.title %}
-  <title>{{ page.title }} - {{ site.name }}</title>
-  {% else %}
-  <title>{{ site.name }}</title>
-  {% endif %}
-  <!--<title>{% if page.title %}{{ page.title }}{% else %}{{ site.head_title }}{% endif %}</title>
-  <meta name="description" content="{{ site.description }}" />-->
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.name }}</title>
   <meta name="description" content="{{ site.description }}" />
 
   <meta name="HandheldFriendly" content="True" />
@@ -21,9 +15,8 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
   <link rel="shortcut icon" href="{{ "/assets/images/favicon.ico" | prepend: site.baseurl }}">
-<!--  <link rel="stylesheet" href="{{asset "js/styles/obsidian.css"}}"> -->
   <link rel="stylesheet" href="http://brick.a.ssl.fastly.net/Linux+Libertine:400,400i,700,700i/Open+Sans:400,400i,700,700i">
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" media="screen" href="{{ "/css/main.css"  | prepend: site.baseurl  }}" />
   <link rel="stylesheet" type="text/css" media="screen" href="{{ "/css/default.css"  | prepend: site.baseurl  }}" />
@@ -38,9 +31,7 @@
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
         ga('create', '{{ site.google_analytics }}', 'auto');
-        ga('require', 'linkid', 'linkid.js');
         ga('send', 'pageview');
-        //ga('set', '&uid', {{USER_ID}}); // Set the user ID using signed-in user_id.
     </script>
     {% endif %}
 
