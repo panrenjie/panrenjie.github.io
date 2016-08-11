@@ -1,9 +1,13 @@
 ---
-layout: post
-title: Start Reading The Power of Habit
-date: 2015-04-24
-guid: urn:uuid:F733FE18-0481-4492-9602-563F8456703F
-image: http://s.cn.bing.net/az/hprichbg/rb/PearLake_ZH-CN8058573080_1920x1080.jpg
+layout: 	post
+title: 		Start Reading The Power of Habit
+subtitle:   " \"Hello World, Hello Blog\""
+date: 		2015-04-24 15:00:00
+author:     "Shiny"
+header-img: "assets/img/post-bg-1.jpg"
+catalog: 	true
+tags:
+    - Books
 ---
 
 ##《习惯的力量》
