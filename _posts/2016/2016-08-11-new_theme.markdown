@@ -13,3 +13,4 @@ tags:
 
 ## 又更新了哦
 
+本文使用Typora编辑，最新的`markdown`编辑器。
