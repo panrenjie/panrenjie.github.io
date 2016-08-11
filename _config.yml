@@ -48,12 +48,12 @@ kramdown:
 
 
 # Disqus settings
-disqus_username: shinyzhu
+#disqus_username: shinyzhu
 
 # Duoshuo settings
-#duoshuo_username: 
+duoshuo_username: 
 # Share component is depend on Comment so we can NOT use share only.
-#duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+duoshuo_share: true                     # set to false if you want to use Comment without Sharing
 
 
 
@@ -63,7 +63,7 @@ disqus_username: shinyzhu
 #ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 # Google Analytics
 ga_track_id: 'UA-1645044-4'            # Format: UA-xxxxxx-xx
-#ga_domain: huangxuan.me
+ga_domain: shinyzhu.com
 
 
 
