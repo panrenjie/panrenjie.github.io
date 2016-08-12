@@ -1,10 +1,10 @@
 ---
 layout: 	post
-title: 		Dynamo：Amazon的高可用性的键值存储系统
-subtitle:   "从网上的Word文档转换而来，方便在线阅读"
-date: 		2016-08-11 13:55:00
+title: 		Dynamo：Amazon高可用键值存储系统
+subtitle:   "本文介绍了Amazon的高可用KV存储系统Dynamo，转发自网络上的一篇Word文档，有修正"
+date: 		2016-08-11 20:55:00
 author:     "Shiny"
-header-img: "assets/img/post-bg-1.jpg"
+header-img: "assets/img/post-dynamodb-primary.idge.png"
 catalog: 	true
 tags:
     - 系统架构
@@ -13,17 +13,19 @@ tags:
 ---
 
 
-> 最近看了coolshell的《[分布式系统的事务处理](http://coolshell.cn/articles/10910.html)》一文，文末引用了此文的中文翻译版，但是只有一个Word文档，为了方便在线阅读，转换成了markdown格式。
+> 最近看了coolshell的《[分布式系统的事务处理](http://coolshell.cn/articles/10910.html)》一文，文末引用了此文的中文版（[英文原版PDF](http://www.read.seas.harvard.edu/~kohler/class/cs239-w08/decandia07dynamo.pdf)），但是只有一个Word文档，为了方便在线阅读，转换成了markdown格式。
+>
+> P.S. 中文翻译还是有很多地方不通顺，作了一些修正。
 
-## Dynamo：Amazon的高可用性的键值存储系统
+## Dynamo：Amazon高可用键值存储系统
 
-*Giuseppe DeCandia, Deniz Hastorun, MadanJampani, Gunavardhan Kakulapati, Avinash Lakshman, Alex Pilchin, SwaminathanSivasubramanian, Peter Vosshall and Werner Vogels*
+原作者：*Giuseppe DeCandia, Deniz Hastorun, MadanJampani, Gunavardhan Kakulapati, Avinash Lakshman, Alex Pilchin, SwaminathanSivasubramanian, Peter Vosshall and Werner Vogels*
 
 ### 摘要
 
-巨大规模系统的可靠性是我们在这个世界上最大的电子商务公司之一－Amazon.com－面对最大的挑战之一，即使最轻微的系统中断都有显着的经济后果并且影响到客户的信赖。Amazon.com平台，它为全球许多网站服务，是实现在位于世界各地的许多数据中心中的成千上万的服务器和网络基础设施之上。在这一规模中，各种大大小小的部件故障持续不断发生，管理持久化状态的方法在面对这些故障时，驱使软件系统的可靠性和可扩展性。
+超大规模系统的可靠性是我们在 Amazon 面对的最大挑战之一，即使是最轻微的系统中断都有显著的经济后果并且影响到客户的信赖。Amazon.com平台，它为全球许多网站服务，是实现在位于世界各地的许多数据中心中的成千上万的服务器和网络基础设施之上。在这一规模中，各种大大小小的部件故障持续不断发生，管理持久化状态的方法在面对这些故障时，驱使软件系统的可靠性和可扩展性。
 
-本文介绍Dynamo的设计和实现，一个高度可用的key-value存储系统，一些Amazon的核心服务使用它用以提供一个“永远在线”的用户体验。为了达到这个级别的可用性，Dynamo在某些故障的场景中将牺牲一致性。它大量使用对象版本和应用程序协助的冲突协调方式以提供一个开发人员可以使用的新颖接口。
+本文介绍Dynamo的设计和实现，一个高可用的key-value存储系统，一些Amazon的核心服务使用它用以提供一个“永远在线”的用户体验。为了达到这个级别的可用性，Dynamo在某些故障的场景中将牺牲一致性。它大量使用对象版本和应用程序协助的冲突协调方式以提供一个开发人员可以使用的新颖接口。
 
 ### 1、简介
 
@@ -393,10 +395,3 @@ Dynamo采用一致性的散列将key space(键空间)分布在其所有的副本
 #### 鸣谢
 
 作者在此要感谢PatHelland，他贡献了Dynamo的初步设计。我们还要感谢MarvinTheimer和RobertvanRenesse的评注。最后，我们要感谢我们的指路人(shepherd)，JeffMogul,他的详细的评注和input(不知道怎样说了？词穷)在准备camera ready版本时，大大提高了本文的质量。
-
- 
-
----
-
-[^英文原文PDF]: http://www.read.seas.harvard.edu/~kohler/class/cs239-w08/decandia07dynamo.pdf
-[^coolshell-article]: http://coolshell.cn/articles/10910.html
