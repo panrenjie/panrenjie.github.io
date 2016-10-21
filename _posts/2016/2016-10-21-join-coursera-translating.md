@@ -4,7 +4,7 @@ title: 来翻译Coursera课程字幕吧
 subtitle: "加入 GTC 一起翻译 Coursera 课程"
 date: 2016-10-08 09:00:00
 author: "Shiny Zhu"
-header-img: "assets/img/post-macOS-Sierria-fallback_screen_large.jpg"
+header-img: "assets/img/post-join-coursera-translating.jpg"
 catalog: true
 tags:
     - macOS
