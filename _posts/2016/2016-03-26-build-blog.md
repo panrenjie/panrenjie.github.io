@@ -5,6 +5,7 @@ subtitle:   "分享你的知识和观点"
 date:       2016-03-26
 author:     "Bebop.C"
 header-img: "img/post-build-a-blog.jpg"
+catalog: true
 tags:
     - Git
     - 建站
@@ -193,7 +194,7 @@ $ git config --global user.email "{name@site.com}"    // 用你的邮箱替换{n
 $ ssh-keygen -t rsa -C"{name@site.com}"    // 用你的邮箱替换{name@site.com}
 ```
 
-可以不输入其他信息，一直敲回车直到命令完成。 
+可以不输入其他信息，一直敲回车直到命令完成。
 这时你的用户目录（win7以上系统默认在 `C:\Users\你的计算机用户名`）内会出现名为 `.ssh` 的文件夹，点进去能看到 `id_rsa` 和 `id_rsa.pub` 两个文件，其中 `id_rsa` 是私钥，不能让怪人拿走， `id_rsa.pub` 是公钥，无需保密（原理请自行参看密码学.............................................我相信你也不会看）。
 
 接下来用你的浏览器登录Github，点击右上角的“Settings”：
@@ -363,7 +364,7 @@ $ jekyll serve
 1.如遇到以下错误，在仓库文件 `_config.yml` 中加入一句 `gems: [jekyll-paginate]` 即可。
 
 ```
-Deprecation: You appear to have pagination turned on, but you haven't included the `jekyll-paginate` gem. Ensure you have `gems: [jekyll-paginate]` in your configuration file. 
+Deprecation: You appear to have pagination turned on, but you haven't included the `jekyll-paginate` gem. Ensure you have `gems: [jekyll-paginate]` in your configuration file.
 ```
 
 2.如遇到以下错误
@@ -420,4 +421,3 @@ $ tasklist /svc /FI "PID eq 6668"
 [5][Ruby和Gem](http://blacktha.com/2015/07/06/tech/Ruby/)  
 [6][使用Github Pages建独立博客](http://beiyuu.com/github-pages/)  
 [7][搭建一个免费的，无限流量的Blog----github Pages和Jekyll入门](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html)
-
