@@ -1,11 +1,11 @@
 # Site settings
-title: IT's Shiny
-SEOTitle: IT's Shiny
+title: Jecy blog
+SEOTitle: Jecy blog
 header-img: img/home-bg.jpg
-email: zhushiny@gmail.com
+email: jecy.pan@foxmail.copm
 description: "Build data products for airlines to increase revenues"
 keyword: "airline, rms, data, spark, aviation, revenue management"
-url: "http://shinyzhu.com"              # your host, for absolute URL
+url: "http://jecy.me"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
@@ -15,7 +15,7 @@ RSS: true
 #weibo_username:     shinyzhu
 #zhihu_username:     shinyzhu
 github_username:    shinyzhu
-twitter_username:   shinyzhu
+#twitter_username:   shinyzhu
 #facebook_username:  shinyzhu
 # linkedin_username:  firstname-lastname-idxxxx
 
@@ -60,7 +60,7 @@ duoshuo_share: true                     # set to false if you want to use Commen
 
 # Analytics settings
 # Baidu Analytics
-#ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
+ba_track_id: ca6aae4f6425726173e1ffdb25d47d9d
 # Google Analytics
 ga_track_id: 'UA-1645044-4'            # Format: UA-xxxxxx-xx
 ga_domain: shinyzhu.com
@@ -69,8 +69,8 @@ ga_domain: shinyzhu.com
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "从事民航数据产品研发"
-sidebar-avatar: /img/avatar-shiny.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "不积跬步，无以至千里<br>不积小流，无以成江海"
+sidebar-avatar: /img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
