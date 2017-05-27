@@ -68,7 +68,7 @@ tar -xvf cmake-3.8.1-Linux-x86_64.tar.gz`
 ` make`               
 ` sudo make install`                           
 ` openocdopen -v`                        
-安装时候，可能还需要安装其他软件，否则报错。
+安装时候，可能还需要安装其他软件，否则报错。      
 `sudo apt-get install libtool`      
 `sudo apt-get install libftdi*`     
 `sudo apt-get install libusb-1.0.0-dev`         
