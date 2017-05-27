@@ -36,9 +36,11 @@ IC型号STM32F407ZGT6
 1、下载cmake安装文件。  [下载地址](https://cmake.org/download/)
 选择cmake-3.8.1-Linux-x86_64.tar.gz，保存到本地。
 2、将安装包移动到/usr/local/目录下，并解压。
-`mv cmake-3.8.1-Linux-x86_64.tar.gz /usr/local
-tar -xvf cmake-3.8.1-Linux-x86_64.tar.gz`
-3、打开`/etc/profile`文件,在文件最后添加
+```
+mv cmake-3.8.1-Linux-x86_64.tar.gz /usr/local
+tar -xvf cmake-3.8.1-Linux-x86_64.tar.gz
+```
+3、打开`/etc/profile`文件,在文件最后添加    
 `export PATH=/usr/local/cmake-3.8.1-Linux-x86_64/bin:$PATH`
 4、使环境变量生效。`source /etc/profile`
 5、终端输入 `cmake -version`,打印 cmake version 3.8.1，安装成功。
@@ -51,10 +53,12 @@ tar -xvf cmake-3.8.1-Linux-x86_64.tar.gz`
 1、下载GCC工具链安装包。[下载地址](https://launchpad.net/gcc-arm-embedded/+download)
 选择gcc-arm-none-eabi-5_4-2016q3-20160926-linux.tar.bz2，保存的本地。
 2、将安装包移动到/usr/bin/目录下，并解压。
-`mv gcc-arm-none-eabi-5_4-2016q3-20160926-linux.tar.bz2 /usr/bin
-    tar -jxvf gcc-arm-none-eabi-5_4-2016q3-20160926-linux.tar.bz2`
+```
+mv gcc-arm-none-eabi-5_4-2016q3-20160926-linux.tar.bz2 /usr/bin
+tar -jxvf gcc-arm-none-eabi-5_4-2016q3-20160926-linux.tar.bz2
+```
 3、添加环境变量。
-打开`/etc/profile`文件,在文件最后添加
+打开`/etc/profile`文件,在文件最后添加      
 `export PATH=/usr/bin/gcc-arm-none-eabi-5_4-2016q3/bin:$PATH`
 4、使环境变量生效。`source /etc/profile`
 5、终端输入 `arm-none-eabi-gcv -v`,打印 gcc version 5.4.1，安装成功。
