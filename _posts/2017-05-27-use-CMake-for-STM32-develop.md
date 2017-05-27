@@ -42,7 +42,8 @@ tar -xvf cmake-3.8.1-Linux-x86_64.tar.gz
 ```
 3、打开`/etc/profile`文件,在文件最后添加       
 `export PATH=/usr/local/cmake-3.8.1-Linux-x86_64/bin:$PATH`         
-4、使环境变量生效。`source /etc/profile`    
+4、使环境变量生效。          
+`source /etc/profile`    
 5、终端输入 `cmake -version`,打印 cmake version 3.8.1，安装成功。    
 
 ### Jlink安装      
