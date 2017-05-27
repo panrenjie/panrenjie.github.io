@@ -23,10 +23,10 @@ tags:
 arm-none-eabi:5.4.1         
 Cmake:3.8.1         
 OpenOCD: 0.10.0     
- STM32CubeMX: 4.21.0
- Java: 1.8.0_131
- 硬件平台：正点原子的探索者开发板。
- IC型号STM32F407ZGT6
+STM32CubeMX: 4.21.0
+Java: 1.8.0_131
+硬件平台：正点原子的探索者开发板。
+IC型号STM32F407ZGT6
 
 
 
