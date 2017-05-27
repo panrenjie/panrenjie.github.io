@@ -81,4 +81,9 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 
 
 # Friends
-friends: []
+friends: [
+    {
+        title: "Bebop.C Blog"
+        href: "http://playingfingers.com"
+    }
+]
