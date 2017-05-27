@@ -1,26 +1,28 @@
 ﻿---
 layout:     post
 title:      "Ubuntu下使用CMake搭建STM32开发环境"
-subtitle:   "Linux 下开发stm32"
+subtitle:   "Linux下开发stm32"
 date:       2017-05-27
 author:     "Jecy"
 header-img: "img/post-build-a-blog.jpg"
-tags:
-    - STM32
-    - Cmake
-    - FreeRTOS
-    - 开发环境 
+tags:       
+    -   STM32
+    -   CMake
+    -   FreeRTOS
+    -   开发环境
 
 
+
+# Ubuntu下使用CMake搭建STM32开发环境
+
+
+标签（空格分隔）： STM32 Ubuntu Linux Cmake FreeRTOS
 
 ---
-
-
 ### 摘要
-
 本文介绍在Ubuntu环境下，如何搭建STM32（以STM32F407为例）开发环境。
 软件版本如下：
->Ubuntu: 14.04
+> Ubuntu: 14.04
 arm-none-eabi:5.4.1
 Cmake:3.8.1
 OpenOCD: 0.10.0
@@ -29,8 +31,7 @@ Java: 1.8.0_131
 硬件平台：正点原子的探索者开发板。
 IC型号STM32F407ZGT6
 
-**版权声明:欢迎转载,转载时请注明出处.**
-http://jecy.me/2017/05/27/use-CMake-for-STM32-develop/
+
 
 以下是开发过程中需要使用的软件以及安装方法，方法针对Ubuntu新手,老司机可略过。
 
@@ -63,13 +64,13 @@ tar -xvf cmake-3.8.1-Linux-x86_64.tar.gz`
 
 ### openocd安装
 1、下载源码。
-`git clone git://git.code.sf.NET/p/openocd/code openocd`
-`cd openocd`
-`./bootstrap`
-`./configure –enable-maintainer-mode –enable-usb_blaster_libftdi `
-`make`
-`sudo make install`
-`openocdopen -v`
+` git clone git://git.code.sf.NET/p/openocd/code openocd`
+` cd openocd`
+` ./bootstrap`
+` ./configure –enable-maintainer-mode –enable-usb_blaster_libftdi `
+` make`
+` sudo make install`
+` openocdopen -v`
 安装时候，可能还需要安装其他软件，否则报错。
 `sudo apt-get install libtool`
 `sudo apt-get install libftdi*`
