@@ -1,7 +1,7 @@
-﻿---                                                                                                                                                                                                      
+﻿---
 layout:     post
 title:      "Ubuntu下使用CMake搭建STM32开发环境"
-subtitle:   ""
+subtitle:   "Linux 下开发stm32"
 date:       2017-05-27
 author:     "Jecy"
 header-img: "img/post-build-a-blog.jpg"
@@ -13,12 +13,9 @@ tags:
 
 
 
-
-# Ubuntu下使用CMake搭建STM32开发环境
-
-
-
 ---
+
+
 ### 摘要
 
 本文介绍在Ubuntu环境下，如何搭建STM32（以STM32F407为例）开发环境。
@@ -32,7 +29,8 @@ Java: 1.8.0_131
 硬件平台：正点原子的探索者开发板。
 IC型号STM32F407ZGT6
 
-
+**版权声明:欢迎转载,转载时请注明出处.**
+http://jecy.me/2017/05/27/use-CMake-for-STM32-develop/
 
 以下是开发过程中需要使用的软件以及安装方法，方法针对Ubuntu新手,老司机可略过。
 
