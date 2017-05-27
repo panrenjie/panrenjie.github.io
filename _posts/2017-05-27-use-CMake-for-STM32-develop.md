@@ -13,11 +13,6 @@ tags:
 
 
 
-# Ubuntu下使用CMake搭建STM32开发环境
-
-
-标签（空格分隔）： STM32 Ubuntu Linux Cmake FreeRTOS
-
 ---
 ### 摘要
 本文介绍在Ubuntu环境下，如何搭建STM32（以STM32F407为例）开发环境。
