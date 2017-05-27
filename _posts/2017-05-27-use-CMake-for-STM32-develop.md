@@ -61,13 +61,13 @@ tar -xvf cmake-3.8.1-Linux-x86_64.tar.gz`
 
 ### openocd安装
 1、下载源码。
-` git clone git://git.code.sf.NET/p/openocd/code openocd`               
-` cd openocd` 
-` ./bootstrap` 
-` ./configure –enable-maintainer-mode –enable-usb_blaster_libftdi `            
-` make` 
-` sudo make install`          
-` openocdopen -v`          
+` git clone git://git.code.sf.NET/p/openocd/code openocd`                              
+` cd openocd`                     
+` ./bootstrap`                      
+` ./configure –enable-maintainer-mode –enable-usb_blaster_libftdi `                             
+` make`               
+` sudo make install`                           
+` openocdopen -v`                        
 安装时候，可能还需要安装其他软件，否则报错。
 `sudo apt-get install libtool`
 `sudo apt-get install libftdi*`
