@@ -103,6 +103,8 @@ make
 
 1、打开终端，输入       
 `openocd -f interface/jlink.cfg -f target/stm32f4x.cfg`
+SWD模式下输入
+`openocd -f interface/jlink.cfg -c "transport select swd" -f target/stm32f4x.cfg`
 2、重新打开另外一个终端，输入     
 ```
 telnet localhost 4444
